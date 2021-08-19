@@ -5,8 +5,8 @@
  * Further Modified By: Mark Njoroge 
  *
  * 
- * <STUDNUM_1> <STUDNUM_2>
- * Date
+ * <STLTSE004>  <MVMAMA001>  
+ * 19th August 2021
 */
 
 #include <signal.h> //for catching signals
