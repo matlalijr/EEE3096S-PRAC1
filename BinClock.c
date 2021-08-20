@@ -87,13 +87,17 @@ int main(void){
 
 	//Set random time (3:04PM)
 	//You can comment this file out later
-	
+        wiringPiI2CWriteReg8(RTC,HOUR_REGISTER,decCompensation(getHours()));
+        wiringPiI2CWriteReg8(RTC,MIN_REGISTER,decCompensation(getMins()));
+        wiringPiI2CWriteReg8(RTC,SEC_REGISTER,decCompensation(getSecs()));
 	// Repeat this until we shut down
 	for (;;){
 		//Fetch the time from the RTC
 
 
-		//Write your logic here
+
+
+  		//Write your logic here
                
 
                 HH = hexCompensation(wiringPiI2CReadReg8(RTC,HOUR_REGISTER));
