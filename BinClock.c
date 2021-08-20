@@ -108,7 +108,7 @@ int main(void){
 
 		//Toggle Seconds LED
 		//Write your logic here
-                ledToggle();
+                digitalWrite(LED,secs%2);
 		hours = HH;
                 mins = MM;
                 secs = SS;
@@ -282,11 +282,4 @@ void toggleTime(void){
 
 	}
 	lastInterruptTime = interruptTime;
-}
-void ledToggle(void){
-        
-        digitalWrite(LED,HIGH);
-        delay(100);
-        digitalWrite(LED,LOW);
-        delay(100);
 }
